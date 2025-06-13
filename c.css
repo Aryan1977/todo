@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: Arial;
+    padding: 20px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 60px; 
+    margin-top: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+input{
+    padding: 8px;
+    font-size: 16px;
+}
+
+.login-card {
+  background: #fff;
+  width: 360px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 70px;
+  margin-bottom: 16px;
+}
+
+.login-card h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 92%;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+.input-group input:focus {
+  border-color: #5b86e5;
+  outline: none;
+}
+
+button{
+    padding: 8px;
+    font-size: 16px;
+}
+
+.login-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.login-btn:hover {
+  filter: saturate(1.5);
+}
+
+.listCard {
+  background: #fff;
+  width: 360px;
+  max-height: 80vh;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+button.delete{
+    margin-left: 10px;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    padding: 8px;
+    margin: 4px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    margin: 5px 0;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.task-item span{
+    flex: 1;
+    text-align: left;
+}
+
+.delete{
+    
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete img{
+    width: 16px;
+    height: 16px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 0px;
+  width: 100%;
+}
+
+#taskList li {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#taskList li:hover {
+  transform: scale(1.01);
+  background-color: #e6f7ff;
+}
+
+#taskList li img,
+#taskList li .delete-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media(max-width: 768px){
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30pxx;
+    }
+
+    .login-card{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .listCard{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    body{
+        padding: 10px;
+    }
+}
