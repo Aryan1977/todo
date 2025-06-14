@@ -5,7 +5,6 @@ body{
     font-family: Arial;
     padding: 20px;
     background-image: url('bg.jpg');
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -194,17 +193,20 @@ li{
     #container {
         flex-direction: column;
         align-items: center;
+        padding: 0 16px;
         gap: 30pxx;
     }
 
     .login-card{
-        width: 90%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 360px;
+        box-sizing: border-box;
     }
 
     .listCard{
-        width: 90%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 360px;
+        box-sizing: border-box;
     }
 
     body{
