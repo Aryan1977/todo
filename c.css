@@ -92,7 +92,7 @@ button{
 .listCard {
   background: #fff;
   width: 360px;
-  max-height: 80vh;
+  max-height: none;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
